@@ -218,7 +218,16 @@ border: 2px solid white;
     color: #3a3a3a;
 }
 
+/* Media query: large or landscape phones (576 px and up)*/
 
+@media screen and (min-width: 576px) {
+
+    #photos {
+       column-count: 2; 
+       column-gap: 0;
+    }
+
+}
 
 /* Media query: tablets and larger (768px nd up)*/
 
@@ -280,6 +289,11 @@ width: 100%;
     text-align: end;
     align-self: flex-end;
 }
+
+/* Gallery */
+#photos {
+    column-count: 3;
+}
     
 }
 
@@ -289,6 +303,10 @@ width: 100%;
     #menu a:hover{
        border-bottom: 1px solid #3a3a3a;
     }
+
+        #photos {
+            column-count: 4;
+        }
 }
 
 /* Large devices (big screens 1200px and up) */
